@@ -11,5 +11,5 @@ class BaseGeometry():
 
         Raises:
             Exception with the message area() is not implemented
-    """
-    raise Exception("area() is not implemented")
+        """
+        raise Exception("area() is not implemented")
