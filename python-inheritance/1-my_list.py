@@ -5,7 +5,7 @@
 
 
 class MyList(list):
-    """"function that defines a class mylist
-    """"
+    """function that defines a class mylist
+    """
     def print_sorted(self):
         print(sorted(self))
