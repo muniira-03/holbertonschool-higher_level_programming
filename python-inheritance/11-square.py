@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Write a class Square that inherits from Rectangle"""
+"""
+This module defines a class Square that inherits from Rectangle.
+It includes validation and implements area calculation and string representation.
+"""
 
 
 Rectangle = __import__('9-rectangle').Rectangle
