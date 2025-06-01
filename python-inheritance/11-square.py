@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This module defines a class Square that inherits from Rectangle.
-It includes validation and implements area calculation and string representation.
+includes validation n implements area calculation n string
 """
 
 
