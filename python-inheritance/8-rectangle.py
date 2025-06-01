@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Write a class Rectangle that inherits from BaseGeometry"""
+"""
+This module defines a class Rectangle that inherits from BaseGeometry.
+It validates the width and height and initializes a rectangle object.
+"""
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
