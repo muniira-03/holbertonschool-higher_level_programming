@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
-from task_00_basic_serialization import load_and_deserialize, serialize_and_save_to_file
+import json
 
-# Sample data to be serialized
-data_to_serialize = {
-    "name": "John Doe",
-    "age": 30,
-    "city": "New York"
-}
+def serialize_and_save_to_file(data, filename):
+    """Serialize a dictionary and save it to a JSON file."""
+    with open(filename, 'w', encoding='utf-8') as json_file:
+        json.dump(data, json_file)
 
-# Serialize the data to JSON and save it to a file
-serialize_and_save_to_file(data_to_serialize, 'data.json')
-print("Data serialized and saved to 'data.json'.")
-
-# Load and deserialize data from 'data.json'
-deserialized_data = load_and_deserialize('data.json')
-print("Deserialized Data:")
-print(deserialized_data)
+def load_and_deserialize(filename):
+    """Load and deserialize a JSON file back to a dictionary."""
+    with open(filename, 'r', encoding='utf-8') as json_file:
+        return json.load(json_file)
