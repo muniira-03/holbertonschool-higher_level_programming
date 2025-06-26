@@ -1,5 +1,5 @@
--- script to count number of records per score in sec_table
-SELECT score, COUNT (*) AS number
+-- Script to count how many records share the same score in second_table
+SELECT score, COUNT(*) AS number
 FROM second_table
-GROUP BY score 
+GROUP BY score
 ORDER BY number DESC;
